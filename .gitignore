@@ -1,0 +1,167 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data files (binary and large)
+data/embeddings/*.pkl
+data/images/*
+!data/images/.gitkeep
+data/*.pkl
+data/*.bin
+data/*.h5
+data/*.hdf5
+data/*.npz
+data/*.npy
+
+# Vector stores
+vector_store/
+*.bin
+*.index
+
+# Pickle files (all locations)
+*.pkl
+*.pickle
+
+# ML Model files
+*.pt
+*.pth
+*.ckpt
+*.pth.tar
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.tflite
+*.mlmodel
+*.joblib
+models/*.bin
+models/*.safetensors
+models/*.pt
+models/*.pth
+models/*.ckpt
+models/*.h5
+models/*.onnx
+
+# PyTorch cache
+.cache/
+torch_cache/
+.huggingface/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Archives (binary)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+
+# Large image files (optional - uncomment if needed)
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+# *.tiff
+# *.webp
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# Backup files
+*.backup
+*.old
+requirements.bck.txt
+*.orig
+
+# Large data files
+*.csv.gz
+*.parquet
+*.feather
+*.arrow
