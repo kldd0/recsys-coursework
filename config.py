@@ -1,6 +1,7 @@
 """
 Конфигурация приложения для мультимодальной рекомендательной системы.
 """
+
 import os
 from dotenv import load_dotenv
 
@@ -11,9 +12,13 @@ load_dotenv()
 DATA_DIR = os.getenv("DATA_DIR", "./data")
 EMBEDDINGS_DIR = os.getenv("EMBEDDINGS_DIR", os.path.join(DATA_DIR, "embeddings"))
 IMAGES_DIR = os.getenv("IMAGES_DIR", os.path.join(DATA_DIR, "images"))
-METADATA_FILE = os.getenv("METADATA_FILE", os.path.join(DATA_DIR, "products_metadata.json"))
+METADATA_FILE = os.getenv(
+    "METADATA_FILE", os.path.join(DATA_DIR, "products_metadata.json")
+)
 # Путь к pickle файлу метаданных
-PICKLE_METADATA_FILE = os.getenv("PICKLE_METADATA_FILE", os.path.join(EMBEDDINGS_DIR, "metadata.pkl"))
+PICKLE_METADATA_FILE = os.getenv(
+    "PICKLE_METADATA_FILE", os.path.join(EMBEDDINGS_DIR, "metadata.pkl")
+)
 
 # Vector Store
 VECTOR_STORE_TYPE = os.getenv("VECTOR_STORE_TYPE", "faiss")
